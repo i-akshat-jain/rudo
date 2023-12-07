@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rudo_1/widgets/homeScreen/addUploadPost/postTypeContainer.dart';
 
 class PostBottomSheet extends StatefulWidget {
   @override
@@ -78,7 +79,7 @@ class _PostBottomSheetState extends State<PostBottomSheet> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Icon(Icons.flight, size: 350),
+            PostTypeContainer(),
             Icon(Icons.directions_transit, size: 350),
           ],
         ),

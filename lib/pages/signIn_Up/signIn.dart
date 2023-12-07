@@ -1,6 +1,4 @@
 import 'package:rudo_1/all_path.dart';
-import 'package:rudo_1/user/dataDB.dart';
-import 'package:rudo_1/user/userData.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -108,10 +106,9 @@ class _SignInState extends State<SignIn> {
                                                 email: userCredential
                                                     .value.user!.email,
                                               );
-                                              
-                                           
-                                              print(userCredential
-                                                  .value.user!.email);
+
+                                            print(userCredential
+                                                .value.user!.email);
 
                                             return 'Result of the asynchronous operation';
                                           },

@@ -1,5 +1,5 @@
 import 'package:rudo_1/all_path.dart';
-import 'package:rudo_1/widgets/homeScreen/addUpload.dart';
+import 'package:rudo_1/widgets/homeScreen/addUploadPost/askAnsPostType.dart';
 
 // import 'dart:io';
 
@@ -56,6 +56,8 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: AddUpload(),
             ),
+            
+
         
             Center(
               child: Column(

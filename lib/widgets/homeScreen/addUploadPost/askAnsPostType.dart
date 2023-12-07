@@ -1,6 +1,5 @@
 import 'package:rudo_1/all_path.dart';
-import 'package:rudo_1/widgets/homeScreen/createPost.dart';
-import 'package:rudo_1/widgets/homeScreen/askUploadPost.dart';
+
 
 class AddUpload extends StatelessWidget {
   const AddUpload({super.key});

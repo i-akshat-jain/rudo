@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:rudo_1/all_path.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 ValueNotifier userCredential = ValueNotifier('');
 Future<dynamic> signInWithGoogle() async {
@@ -38,6 +40,8 @@ Future<dynamic> signInWithGoogle() async {
 
 Future<bool> signOutFromGoogle() async {
   try {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.remove('userCredential');
     await FirebaseAuth.instance.signOut();
     return true;
   } on Exception catch (_) {

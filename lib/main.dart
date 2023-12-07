@@ -1,5 +1,7 @@
 import 'package:rudo_1/all_path.dart';
 
+
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -13,13 +15,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Wrapper(),
+        '/HomePage': (context) => const HomePage(),
+        '/SignIn': (context) => const SignIn(),
+      },
       theme: ThemeData(
-        
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFF9EEDD)),
         useMaterial3: true,
       ),
-      home: const SignIn(),
     );
   }
 }
