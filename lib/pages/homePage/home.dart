@@ -75,7 +75,12 @@ class _HomePageState extends State<HomePage> {
                           userCredential = '' as ValueNotifier;
                         }
                       },
-                      child: Text("Click Me"))
+                      child: Text("Click Me", style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 12,
+                                      fontFamily: 'Manrope',
+                                      fontWeight: FontWeight.w400,
+                                      height: 0.14),),)
                 ],
               ),
             ),

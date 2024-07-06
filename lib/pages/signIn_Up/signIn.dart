@@ -230,7 +230,7 @@ class _SignInState extends State<SignIn> {
                           )),
                     ),
                   )
-                : const HomePage();
+                : const BottomNavigator();
           }),
     );
   }

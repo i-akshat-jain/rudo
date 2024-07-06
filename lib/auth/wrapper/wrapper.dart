@@ -35,7 +35,8 @@ class _WrapperState extends State<Wrapper> {
     // Navigate to the appropriate page based on the authentication state
     Navigator.pushReplacementNamed(
       context,
-      userLoggedIn ? '/HomePage' : '/SignIn',
+      '/BottomNavigator'
+      // userLoggedIn ? '/BottomNavigator' : '/SignIn',
     );
   }
   Future<bool> isLoggedInFromStorage() async {

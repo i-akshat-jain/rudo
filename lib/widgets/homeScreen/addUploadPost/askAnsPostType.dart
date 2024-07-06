@@ -1,6 +1,5 @@
 import 'package:rudo_1/all_path.dart';
 
-
 class AddUpload extends StatelessWidget {
   const AddUpload({super.key});
 
@@ -27,12 +26,12 @@ class AddUpload extends StatelessWidget {
                           "https://media.istockphoto.com/id/1703845111/vector/user-profile-icon-with-transparent-avatar-or-person-sign-profile-picture-portrait-symbol.jpg?s=1024x1024&w=is&k=20&c=0vJIyvncg9U3ujLGJTXmjxtJGRseGqB5OxSkQJ5m5Hg="),
                     ),
                     GestureDetector(
-                      onTap: () async {
-                        // Handle the click action here
-                        print('Type Here!');
-                        // Add your logic for what should happen on button click
-                      },
-                      child: Container(
+                        onTap: () async {
+                          // Handle the click action here
+                          print('Type Here!');
+                          // Add your logic for what should happen on button click
+                        },
+                        child: Container(
                           decoration: ShapeDecoration(
                             shape: RoundedRectangleBorder(
                               side: BorderSide(
@@ -44,11 +43,18 @@ class AddUpload extends StatelessWidget {
                             // border: Border.all(width: 1, color: Colors.black54)
                           ),
                           width: MediaQuery.of(context).size.width * 0.8,
-                          child: const Padding(
-                            padding: EdgeInsets.all(6.0),
-                            child: Text("What is on your mind Bow?"),
-                          )),
-                    )
+                          child:  Padding(
+                              padding: EdgeInsets.all(14.0),
+                              child: Text(
+                                "What is on your mind Bow?",
+                                style: TextStyle(
+                                    color: Color(0xFF000000).withOpacity(0.3),
+                                    fontSize: 15,
+                                    fontFamily: 'Manrope',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0.14),
+                              )),
+                        ))
                   ]),
             ),
             Padding(
@@ -90,8 +96,7 @@ class AddUpload extends StatelessWidget {
                             isScrollControlled: true,
                             isDismissible: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                  20.0), 
+                              borderRadius: BorderRadius.circular(20.0),
                             ),
                             builder: (context) {
                               return FractionallySizedBox(
